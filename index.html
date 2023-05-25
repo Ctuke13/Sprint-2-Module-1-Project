@@ -1,0 +1,240 @@
+<!-- Intro to HTML & CSS I
+
+  Module Project Overview
+
+    You will build a website to display the bio of your favorite programmer, artist, etc.
+
+    In order to do this, you will create an `index.html` file and scaffold the document
+    with the elements shared by all HTML documents:
+
+    - doctype declaration
+    - html element
+    - head, containing a title and an optional style tag
+    - body, containing the markup that renders to the screen
+
+  Requirements
+
+    Review this article: https://www.w3schools.com/html/html5_semantic_elements.asp
+
+    Create an `index.html` file for your site, or use this same file.
+
+    For your site, you will make use of at least the following semantic elements:
+
+    - header (to contain the main heading of the site, and the nav)
+    - nav (to contain some links to navigate to the different sections of this document)
+    - section (each holding at least a heading and a paragraph)
+    - aside (containing an img and a caption)
+    - footer (containing a contact form)
+    - form (containing at least two inputs with their labels)
+
+    See an example of a finished site: https://bloominstituteoftechnology.github.io/img/anita-borg-bio-website.png
+
+    The example above is quite simple, but you can make your site as fancy as you'd like. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dwayne johnson Bios</title>
+    <style>
+      .bio-text {
+        font-size: 20px;
+      }
+
+      #overview-heading {
+        grid-column: 1 / -1;
+      }
+
+      .container {
+        display: grid;
+        align-items: center;
+        column-gap: 5px;
+        background-color: #fff;
+        padding: 20px;
+      }
+
+      #overview-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 10px;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 0;
+        background-color: #f0f0f0;
+      }
+
+      /* #overviewContainer {
+        background-color: #fff;
+        padding: 20px;
+      } */
+
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dwayne 'The Rock' Johnson</h1>
+    <nav>
+      <div id="navContainer">
+        <ul>
+          <li id="overview" class="links"><a href="#overview">Overview</a></li>
+          <li id="career" class="links">
+            <a href="#career-heading">Pro-Wrestling Career</a>
+          </li>
+          <li id="career" class="links">
+            <a href="#acting-heading">Acting Career</a>
+          </li>
+          <li id="awards" class="links">
+            <a href="#championships-and-awards-heading">Awards</a>
+          </li>
+          <li id="awards" class="links">
+            <a href="#webadmin-heading">Contact Web Administrator</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section>
+      <div id="overviewContainer" class="container">
+        <div id="overview-heading">
+          <h2>Overview</h2>
+        </div>
+        <div id="overview-content">
+          <p id="overview-text" class="bio-text">
+            Dwayne Douglas Johnson (born May 2, 1972), also known by his ring
+            name The Rock, is an American actor, film producer, and former
+            professional wrestler. Widely regarded as one of the greatest
+            professional wrestlers of all time, he was integral to the
+            development and success of the World Wrestling Federation (WWF, now
+            WWE) during the Attitude Era, an industry boom period in the late
+            1990s and early 2000s. Johnson wrestled for the WWF for eight years
+            prior to pursuing an acting career.
+          </p>
+          <aside id="img-aside">
+            <img
+              id="img"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Dwayne_Johnson_2014_%28cropped%29.jpg/220px-Dwayne_Johnson_2014_%28cropped%29.jpg"
+            />
+            <address id="pic-description">
+              Dwayne Johnson at the Australia premiere of Hercules in 2014
+            </address>
+          </aside>
+        </div>
+      </div>
+      <div id="careerContainer" class="container">
+        <div id="career-heading">
+          <h2>Pro Wrestling Career</h2>
+        </div>
+        <div id="career-content">
+          <p id="career-text" class="bio-text">
+            In 1996, Johnson's father Rocky assisted in helping him secure a
+            contract with the WWF. Johnson quickly rose to global prominence,
+            aided by a gimmick he employed as a charismatic trash talker.
+            Johnson left WWE in 2004 and returned in 2011 as a part-time
+            performer until 2013, making sporadic appearances until retiring in
+            2019. A 10-time world champion, including the promotion's first of
+            African-American descent, he is also a two-time Intercontinental
+            Champion, a five-time Tag Team Champion, the 2000 Royal Rumble
+            winner, and WWE's sixth Triple Crown champion. Johnson headlined the
+            most-bought professional wrestling pay-per-view (WrestleMania
+            XXVIII) and was featured among the most watched episodes of WWE's
+            flagship television series (Raw and SmackDown).
+          </p>
+        </div>
+      </div>
+      <div id="actingContainer" class="container">
+        <div id="acting-heading">
+          <h2>Acting Career</h2>
+        </div>
+        <div id="acting-content">
+          <p id="acting-text" class="bio-text">
+            Johnson's first film role was in The Mummy Returns (2001). The
+            following year he played his first leading role in the action
+            fantasy film The Scorpion King (2002). He has since starred in
+            family films The Game Plan (2007), Race to Witch Mountain (2009),
+            Tooth Fairy (2010), Jumanji: Welcome to the Jungle (2017), Jumanji:
+            The Next Level (2019), and Jungle Cruise (2021), as well as the
+            action films Journey 2: The Mysterious Island (2012), G.I. Joe:
+            Retaliation (2013), Hercules (2014), Skyscraper (2018), San Andreas
+            (2015) and Rampage (2018). He also starred in the action comedy
+            films Get Smart (2008), Central Intelligence (2016), Baywatch
+            (2017), and Red Notice (2021). His role as Luke Hobbs in the Fast &
+            Furious films, beginning with Fast Five (2011), helped the franchise
+            become one of the highest-grossing in film.[18] He joined the DC
+            Extended Universe playing the titular role in Black Adam (2022). He
+            is also known for voicing Maui in the Disney animated film Moana
+            (2016). Johnson produced and starred in the HBO comedy-drama series
+            Ballers (2015–2019), and the autobiographical sitcom Young Rock
+            (2021).
+          </p>
+        </div>
+      </div>
+      <div id="championships-and-awardsContainer" class="container">
+        <div id="championships-and-awards-heading">
+          <h2>Championships & Awards</h2>
+        </div>
+        <div id="championships-and-awards-content">
+          <p id="awards-text" class="bio-text">
+            Dwayne Johnson was recognized for his accomplishments as a pro
+            wrestler, as well as his work in fitness and being one of the most
+            popular movie stars in the world.
+          </p>
+          <ul>
+            <li>WWE Champion <i>8 times</i></li>
+            <li>WCW Champion <i>2 times</i></li>
+            <li>WWF Intercontinental Champion <i>2 times</i></li>
+            <li>WWF Tag Team Champion <i>5 times</i></li>
+            <li>Royal Rumble Winner <i>(2000)</i></li>
+          </ul>
+          <ul>
+            <li>Muscle & Fitness Man of the Century <i>(2015)</i></li>
+            <li>Mr. Olympia Icon Award <i>(2016)</i></li>
+            <li>Peopl Magazine Sexiest Man Alive <i>(2016)</i></li>
+            <li>Time 100 Most Influential People in the World <i>(2016)</i></li>
+            <li>NAACP Image Awards Entertainer of the Year <i>(2017)</i></li>
+          </ul>
+        </div>
+      </div>
+      <footer>
+        <div id="webadminContainer" class="container">
+          <div id="webadmin-heading">
+            <h2>Contact Web Admin</h2>
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" />
+            <label for="message">Message:</label>
+            <input type="text" id="message" name="message" />
+            <input type="submit" id="submit" name="sumbit" />
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script>
+      const divs = document.querySelectorAll("div");
+      const navLi = document.querySelectorAll("nav.navContainer ul li");
+
+      window.onscroll = () => {
+        let current = "";
+
+        div.forEach((div) => {
+          const divTop = div.offsetTop;
+          if (pageYOffset >= divTop) {
+            current = div.getAttribute("id");
+          }
+        });
+
+        navLi.forEach((li) => {
+          li.classList.remove("active");
+          if (li.classList.contains(current)) {
+            li.classList.add("active");
+          }
+        });
+      };
+    </script>
+  </body>
+</html>
